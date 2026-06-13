@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zain</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+
+    <div class="main-profile">
+        <img src="profile.jpg" alt="Profile">
+    </div>
+
+    <h1>Zain</h1>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>About</h2>
+
+    <p>
+        A quiet collection of moments I liked enough to keep.
+    </p>
+
+</section>
+
+<section id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="photo1.jpg" alt="">
+        <img src="photo2.jpg" alt="">
+        <img src="photo3.jpg" alt="">
+        <img src="photo4.jpg" alt="">
+        <img src="photo5.jpg" alt="">
+        <img src="photo6.jpg" alt="">
+        <img src="photo7.jpg" alt="">
+        <img src="photo8.jpg" alt="">
+        <img src="photo9.jpg" alt="">
+        <img src="photo10.jpg" alt="">
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Zain — All Rights Reserved.
+</footer>
+
+</body>
+</html>
