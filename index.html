@@ -1,256 +1,213 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zain Archive</title>
+<title>Zain</title>
 
 <style>
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  background:#050505;
-  color:#fff;
-  font-family:monospace;
-  line-height:1.6;
+    background:#050505;
+    color:white;
+    font-family:monospace;
+    line-height:1.6;
 }
 
 header{
-  background:#050505;
-  border-bottom:1px solid #1c1c1c;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  text-align:center;
-  padding:24px 15px 18px;
-}
-
-header h1{
-  font-size:28px;
-  letter-spacing:2px;
-  font-weight:400;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#050505;
+    border-bottom:1px solid #1c1c1c;
+    padding:18px;
 }
 
 nav{
-  margin-top:12px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
 }
 
 nav a{
-  color:#aaa;
-  margin:0 14px;
-  text-decoration:none;
-  font-size:14px;
+    color:#aaa;
+    text-decoration:none;
+    font-size:14px;
 }
 
 nav a:hover{
-  color:white;
+    color:white;
 }
 
 .container{
-  max-width:1150px;
-  margin:auto;
-  padding:40px 20px;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 .hero{
-  text-align:center;
-  padding:45px 0 25px;
+    text-align:center;
+    padding:40px 0;
 }
 
 .hero img{
-  width:135px;
-  height:135px;
-  object-fit:cover;
-  border-radius:50%;
-  border:2px solid #333;
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid #333;
 }
 
 .hero h1{
-  margin-top:18px;
-  font-size:44px;
-  font-weight:400;
-  letter-spacing:3px;
+    margin-top:18px;
+    font-size:42px;
+    font-weight:400;
+    letter-spacing:3px;
 }
 
 .section{
-  margin:35px 0;
-  padding:28px;
-  background:#101010;
-  border:1px solid #222;
-  border-radius:14px;
+    margin:35px 0;
+    padding:28px;
+    background:#101010;
+    border:1px solid #222;
+    border-radius:14px;
 }
 
 .section h2{
-  margin-bottom:18px;
-  font-size:24px;
-  font-weight:400;
-  text-align:center;
+    text-align:center;
+    margin-bottom:16px;
+    font-weight:400;
 }
 
 .section p{
-  color:#bdbdbd;
-  text-align:center;
+    text-align:center;
+    color:#bdbdbd;
 }
 
 .gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:18px;
-  margin-top:22px;
+    columns:4 220px;
+    column-gap:18px;
+    margin-top:20px;
 }
 
 .card{
-  background:#080808;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #222;
+    margin-bottom:18px;
+    break-inside:avoid;
+    background:#080808;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #222;
 }
 
 .card img{
-  width:100%;
-  height:340px;
-  object-fit:cover;
-  display:block;
-  transition:.3s;
+    width:100%;
+    height:auto;
+    display:block;
+    transition:0.3s;
 }
 
 .card img:hover{
-  transform:scale(1.03);
-  opacity:.85;
-}
-
-.card p{
-  text-align:center;
-  padding:14px;
-  color:#ddd;
+    opacity:.85;
+    transform:scale(1.02);
 }
 
 footer{
-  text-align:center;
-  padding:30px 20px;
-  color:#777;
-  border-top:1px solid #1c1c1c;
-  margin-top:40px;
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #1c1c1c;
+    margin-top:40px;
 }
 
-@media(max-width:700px){
+@media(max-width:768px){
 
-  header h1{
-    font-size:22px;
-  }
+    nav{
+        gap:20px;
+    }
 
-  nav a{
-    margin:0 8px;
-    font-size:13px;
-  }
+    .hero h1{
+        font-size:32px;
+    }
 
-  .hero h1{
-    font-size:36px;
-  }
-
-  .section{
-    padding:22px;
-  }
+    .gallery{
+        columns:2 180px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <div class="container">
 
-  <section class="hero">
-    <img src="profile.jpg" alt="Zain Profile Picture">
-    <h1>Zain</h1>
-  </section>
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>Zain</h1>
+    </section>
 
-  <section id="about" class="section">
-    <h2>About</h2>
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+            A quiet collection of moments I liked enough to keep.
+        </p>
+    </section>
 
-    <p>
-      A quiet collection of moments I liked enough to keep.
-    </p>
-  </section>
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
 
-  <section id="gallery" class="section">
-    <h2>Gallery</h2>
+        <div class="gallery">
 
-    <div class="gallery">
+            <div class="card"><img src="photo1.jpg"></div>
+            <div class="card"><img src="photo2.jpg"></div>
+            <div class="card"><img src="photo3.jpg"></div>
+            <div class="card"><img src="photo4.jpg"></div>
+            <div class="card"><img src="photo5.jpg"></div>
+            <div class="card"><img src="photo6.jpg"></div>
+            <div class="card"><img src="photo7.jpg"></div>
+            <div class="card"><img src="photo8.jpg"></div>
+            <div class="card"><img src="photo9.jpg"></div>
+            <div class="card"><img src="photo10.jpg"></div>
+            <div class="card"><img src="photo11.jpg"></div>
+            <div class="card"><img src="photo12.jpg"></div>
+            <div class="card"><img src="photo13.jpg"></div>
+            <div class="card"><img src="photo14.jpg"></div>
+            <div class="card"><img src="photo15.jpg"></div>
+            <div class="card"><img src="photo16.jpg"></div>
 
-      <div class="card">
-        <img src="photo1.jpg" alt="">
-      </div>
+        </div>
+    </section>
 
-      <div class="card">
-        <img src="photo2.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo3.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo4.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo5.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo6.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo7.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo8.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo9.jpg" alt="">
-      </div>
-
-      <div class="card">
-        <img src="photo10.jpg" alt="">
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-
-    <p>
-      mohammedfarhanzain@gmail.com
-    </p>
-  </section>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>mohammedfarhanzain@gmail.com</p>
+    </section>
 
 </div>
 
 <footer>
-  © 2026 Zain Archive. All Rights Reserved.
+    © 2026 Zain. All Rights Reserved.
 </footer>
 
 </body>
 </html>
+```
